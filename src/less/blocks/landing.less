@@ -1,0 +1,328 @@
+.landing {
+    overflow-x: hidden;
+}
+
+.landing__main {
+    background: #061148 url('../../img/bg-decor.png') 0% 0% no-repeat;
+    background-size: 100% 100%;
+}
+
+.landing__intro {
+    position: relative;
+    background: #b1cff6 url('../../img/intro-bg.jpg') 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.landing__intro-offer {
+    position: absolute;
+    width: 85.5vw;
+    box-sizing: border-box;
+    padding: 35px 0 28px 14.1%;
+    left: 14.5%;
+    top: 20px;
+    text-transform: uppercase;
+    color: #525652;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+    background: #b1cff6 url('../../img/offer-bg.png') 50% 50% no-repeat;
+    background-size: cover;
+    @media (max-width: @breakpoint-large) {
+        font-size: 40px;
+    }
+    @media (max-width: @breakpoint-small) {
+        width: 100vw;
+        left: 0;
+        padding: 25px;
+        font-size: 25px;
+    }
+}
+
+.landing__intro-content {
+    margin-top: 190px;
+    margin-left: 37.5%;
+    @media (max-width: @breakpoint-small) {
+        margin-top: 120px;
+        margin-left: 0;
+    }
+}
+
+.landing__intro-text {
+    margin-bottom: 80px;
+    color: #544d45;
+    font-size: 30px;
+    line-height: 1;
+    span {
+        font-size: 48px;
+        color: #ed020a;
+        line-height: 1.7;
+    }
+    @media (max-width: @breakpoint-medium) {
+        font-size: 25px;
+        line-height: 1.5;
+        span {
+            font-size: 25px;
+            line-height: 1.5;
+        }
+    }
+    @media (max-width: @breakpoint-small) {
+        margin-bottom: 40px;
+        font-size: 20px;
+        span {
+            font-size: 20px;
+        }
+    }
+}
+
+.landing__intro-tel {
+    margin-bottom: 50px;
+    color: #544d45;
+    font-size: 30px;
+    line-height: 1.8;
+    @media (max-width: @breakpoint-small) {
+        font-size: 25px;
+    }
+}
+
+.landing__search {
+    background-color: rgba(255,255,255,0.11);
+}
+
+.landing__search-title {
+    margin: 60px 0 60px;
+}
+
+.landing__offers {
+    margin-bottom: 115px;
+}
+
+.landing__offers-title {
+    margin: 106px 0 53px;
+}
+
+.landing__offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    grid-column-gap: 140px;
+    grid-row-gap: 120px;
+    justify-content: center;
+    @media (max-width: @breakpoint-medium) {
+        grid-row-gap: 50px;
+    }
+    @media (max-width: @breakpoint-small) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.landing__about {
+    padding-bottom: 102px;
+    background: rgba(255,255,255,0.05);
+}
+
+.landing__about-title {
+    margin: 64px 0 42px;
+}
+
+.landing__job {
+    margin-bottom: 130px;
+    padding-bottom: 50px;
+}
+
+.landing__job-title {
+    margin: 76px 0 45px;
+}
+
+.landing__job-text {
+    margin-bottom: 80px;
+}
+
+.landing__liders-title {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.landing__liders-slider {
+    position: relative;
+}
+
+.landing__liders-slider-prev {
+    position: absolute;
+    top: 240px;
+    left: 47px;
+}
+
+.landing__liders-slider-next {
+    position: absolute;
+    top: 240px;
+    left: 82px;
+}
+
+.landing__partners {
+    padding-bottom: 120px;
+}
+
+.landing__partners-title {
+    margin: 0 0 52px;
+}
+
+.landing__partners-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 155px;
+    background-color: #ffffff;
+}
+
+.landing__partners-slider {
+    position: relative;
+    padding: 0 65px;
+    .uk-position-center-left-out {
+        right: ~"calc(100% + 40px)";
+    }
+    .uk-position-center-right-out {
+        left: ~"calc(100% + 40px)";
+    }
+    @media (max-width: @breakpoint-small) {
+        padding: 0 20px;
+        .uk-position-center-left-out {
+            right: 100%;
+        }
+        .uk-position-center-right-out {
+            left: 100%;
+        }
+    }
+}
+
+.landing__partners-slider-prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.landing__partners-slider-next {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.landing__news {
+    padding-bottom: 85px;
+    background-color: rgba(255,255,255,0.11);
+}
+
+.landing__news-title {
+    margin: 64px 0 40px;
+}
+
+.landing__news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 548px);
+    grid-column-gap: 144px;
+    grid-row-gap: 136px;
+    justify-content: center;
+    margin-bottom: 80px;
+    @media (max-width: @breakpoint-small) {
+        grid-template-columns: 1fr;
+        grid-row-gap: 40px;
+    }
+}
+
+.landing__news-more {
+    width: 320px;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 22px;
+    background-color: rgba(231, 231, 231, 0.4);
+    border: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    &:hover {
+        background-color: rgba(231, 231, 231, 0.2);
+        transition: background-color 0.25s;
+    }
+    @media (max-width: @breakpoint-small) {
+        width: 100%;
+    }
+}
+
+.landing__contacts {
+    padding-bottom: 117px;
+}
+
+.landing__contacts-title {
+    margin: 100px 0 50px;
+}
+
+.landing__contacts-columns {
+    display: flex;
+    align-items: center;
+    @media (max-width: @breakpoint-medium) {
+        flex-direction: column;
+    }
+}
+
+.landing__contacts-map {
+    width: 60%;
+    margin-right: 33px;
+    & > ymaps {
+        width: 100% !important;
+        height: 367px !important;
+    }
+    @media (max-width: @breakpoint-medium) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    @media (max-width: @breakpoint-small) {
+        & > ymaps {
+            height: 170px !important;
+        }
+    }
+}
+
+.landing__contacts-info {
+    flex-basis: 50%;
+}
+
+.landing__contacts-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 38px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.landing__contacts-icon {
+    margin-right: 30px;
+}
+
+.landing__contacts-address {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.landing__contacts-tel {
+    font-size: 24px;
+    line-height: 1;
+    span {
+        font-size: 15px;
+    }
+}
+
+.landing__contacts-mail {
+    line-height: 1;
+}

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Агенство недвижимости &laquo;Новый адрес&raquo;</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="landing">
+        <header class="header">
+            <div class="uk-container">
+                <div class="header__columns">
+                    <div class="header__logo">
+                        <img src="../img/logo.svg" alt="">
+                    </div>
+                    <div class="header__main">
+                        <div class="header__upper">
+                            <div class="header__upper-leftside">
+                                <div class="header__contact-column">
+                                    <button class="header__callback" type="button" data-uk-toggle="target: #callback">Обратная связь</button>
+                                </div>
+                                <div class="header__contact-column">
+                                    <span class="header__contact-icon icon icon_phone"></span>
+                                    <span class="header__tel"><span>(473) </span>240-90-33</span>
+                                </div>
+                                <div class="header__contact-column">
+                                    <span class="header__contact-icon icon icon_mail"></span>
+                                    <a class="header__email" href="mailto:nov_adress@mail.ru">nov_adress@mail.ru</a>
+                                </div>
+                            </div>
+                            <div class="header__upper-rightside">
+                                <div class="header__social">
+                                    <a class="header__social-link header__social-link_in" href="#"></a>
+                                    <a class="header__social-link header__social-link_fb" href="#"></a>
+                                    <a class="header__social-link header__social-link_od" href="#"></a>
+                                    <a class="header__social-link header__social-link_vk" href="#"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__lower">
+                            <nav class="header__nav">
+                                <a href="#">Главная</a>
+                                <a href="#search">Поиск недвижимости</a>
+                                <a href="#offers">Свежие предложения</a>
+                                <a href="#about">О компании</a>
+                                <a href="#job">Работа</a>
+                                <a href="#partners">Партнеры</a>
+                                <a href="#news">Новости</a>
+                                <a href="#contacts">Контакты</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="landing__main">
+            <section class="landing__intro">
+                <div class="landing__intro-offer">ПРЕДЛАГАЕМ КВАРТИРЫ</div>
+                <div class="uk-container">
+                    <div class="landing__intro-content">
+                        <div class="landing__intro-text">
+                            в новых домах<br>
+                            <span>по ценам застройщика</span><br>
+                            в разных районах города
+                        </div>
+                        <div class="landing__intro-tel">
+                            8(952)106-68-78<br>
+                            8(952)106-54-59
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="landing__search" id="search">
+                <div class="uk-container">
+                    <h2 class="landing__search-title section-title">Поиск недвижимости</h2>
+                    <form class="search-form">
+                        <div class="search-form__grid">
+                            <div>
+                                <div class="search-form__row">
+                                    <label class="search-form__label" for="objects">Объекты</label>
+                                    <select class="uk-select" name="search_objects" id="objects">
+                                        <option selected>Любые</option>
+                                        <option>Плохие</option>
+                                        <option>Хорошие</option>
+                                    </select>
+                                </div>
+                                <div class="search-form__row">
+                                    <div class="search-form__columns">
+                                        <div>
+                                            <label class="search-form__label" for="price-from">Цена от</label>
+                                            <input class="uk-input" type="text" name="search_price-from" id="price-from">
+                                        </div>
+                                        <div class="search-form__dash"></div>
+                                        <div>
+                                            <label class="search-form__label" for="price-to">до руб.</label>
+                                            <input class="uk-input" type="text" name="search_price-to" id="price-to">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="search-form__row">
+                                    <label class="search-form__label" for="district">Район</label>
+                                    <select class="uk-select" name="search_district" id="district">
+                                        <option selected>Любой</option>
+                                        <option>Левобережный</option>
+                                        <option>Шилово</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="search-form__row">
+                                    <label class="search-form__label" for="sort">Сортировать по</label>
+                                    <select class="uk-select" name="search_sort" id="sort">
+                                        <option selected>Умолчанию</option>
+                                        <option>По возрастанию</option>
+                                        <option>По убыванию</option>
+                                    </select>
+                                </div>
+                                <div class="search-form__row">
+                                    <div class="search-form__columns">
+                                        <div>
+                                            <label class="search-form__label" for="square-from">Площадь от</label>
+                                            <input class="uk-input" type="text" name="search_square-from" id="square-from">
+                                        </div>
+                                        <div class="search-form__dash"></div>
+                                        <div>
+                                            <label class="search-form__label" for="square-to">до кв.м</label>
+                                            <input class="uk-input" type="text" name="search_square-to" id="square-to">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="search-form__submit" type="submit">Найти</button>
+                    </form>
+                </div>
+            </section>
+            <section class="landing__offers" id="offers">
+                <div class="uk-container">
+                    <h2 class="landing__offers-title section-title">Свежие предложения</h2>
+                    <div class="landing__offers-grid">
+                        <div class="offer-item">
+                            <div class="offer-item__image uk-cover-container">
+                                <img class="uk-cover" src="../img/offer.jpg" alt="">
+                            </div>
+                            <div class="offer-item__price">
+                                900 000 <span>руб.</span>
+                            </div>
+                            <div class="offer-item__square">
+                                44 <span>м2</span>
+                            </div>
+                            <div class="offer-item__title">
+                                Название объекта может быть в несколько строк
+                            </div>
+                            <div class="offer-item__district">
+                                Название района
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <div class="offer-item__image uk-cover-container">
+                                <img class="uk-cover" src="../img/offer.jpg" alt="">
+                            </div>
+                            <div class="offer-item__price">
+                                900 000 <span>руб.</span>
+                            </div>
+                            <div class="offer-item__square">
+                                44 <span>м2</span>
+                            </div>
+                            <div class="offer-item__title">
+                                Название объекта может быть в несколько строк
+                            </div>
+                            <div class="offer-item__district">
+                                Название района
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <div class="offer-item__image uk-cover-container">
+                                <img class="uk-cover" src="../img/offer.jpg" alt="">
+                            </div>
+                            <div class="offer-item__price">
+                                900 000 <span>руб.</span>
+                            </div>
+                            <div class="offer-item__square">
+                                44 <span>м2</span>
+                            </div>
+                            <div class="offer-item__title">
+                                Название объекта может быть в несколько строк
+                            </div>
+                            <div class="offer-item__district">
+                                Название района
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <div class="offer-item__image uk-cover-container">
+                                <img class="uk-cover" src="../img/offer.jpg" alt="">
+                            </div>
+                            <div class="offer-item__price">
+                                900 000 <span>руб.</span>
+                            </div>
+                            <div class="offer-item__square">
+                                44 <span>м2</span>
+                            </div>
+                            <div class="offer-item__title">
+                                Название объекта может быть в несколько строк
+                            </div>
+                            <div class="offer-item__district">
+                                Название района
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <div class="offer-item__image uk-cover-container">
+                                <img class="uk-cover" src="../img/offer.jpg" alt="">
+                            </div>
+                            <div class="offer-item__price">
+                                900 000 <span>руб.</span>
+                            </div>
+                            <div class="offer-item__square">
+                                44 <span>м2</span>
+                            </div>
+                            <div class="offer-item__title">
+                                Название объекта может быть в несколько строк
+                            </div>
+                            <div class="offer-item__district">
+                                Название района
+                            </div>
+                        </div>
+                        <div class="offer-item">
+                            <div class="offer-item__image uk-cover-container">
+                                <img class="uk-cover" src="../img/offer.jpg" alt="">
+                            </div>
+                            <div class="offer-item__price">
+                                900 000 <span>руб.</span>
+                            </div>
+                            <div class="offer-item__square">
+                                44 <span>м2</span>
+                            </div>
+                            <div class="offer-item__title">
+                                Название объекта может быть в несколько строк
+                            </div>
+                            <div class="offer-item__district">
+                                Название района
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="landing__about" id="about">
+                <div class="uk-container">
+                    <h2 class="landing__about-title section-title">О компании</h2>
+                    <div class="landing__about-text">
+                        Продать дом недорого в Воронеже, купить жилье в новостройке в ипотеку – доступно в компании «Новый Адрес»
+                        Мы приветствуем вас на сайте воронежского Агентства недвижимости «Новый Адрес» – риелторской компании, которая уже успела заслужить доверие жителей города.
+                    </div>
+                </div>
+            </section>
+            <section class="landing__job" id="job">
+                <div class="uk-container">
+                    <h2 class="landing__job-title section-title">Работа</h2>
+                    <div class="landing__job-text">
+                        Текст описание  работы Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии .элементы дизайна. Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна. Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.
+                    </div>
+                    <div class="landing__liders">
+                        <h3 class="landing__liders-title">Лидеры продаж</h3>
+                        <div data-uk-slider>
+                            <div class="uk-slider-container uk-position-relative">
+                                <ul class="uk-slider-items">
+                                    <li>
+                                        <div class="lider-item">
+                                            <div class="lider-item__image uk-cover-container">
+                                                <img class="uk-cover" src="../img/lider.jpg" alt="">
+                                            </div>
+                                            <div class="lider-item__desc">
+                                                <div class="lider-item__title">
+                                                    Копылова Наталья Васильевна №2
+                                                </div>
+                                                <div class="lider-item__position">
+                                                    Эксперт по недвижимости
+                                                </div>
+                                                <div class="lider-item__text">
+                                                    Текст описание  работы Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна. Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна. Текст описание  работы Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии .элементы дизайна. Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="lider-item">
+                                            <div class="lider-item__image uk-cover-container">
+                                                <img class="uk-cover" src="../img/lider.jpg" alt="">
+                                            </div>
+                                            <div class="lider-item__desc">
+                                                <div class="lider-item__title">
+                                                    Копылова Наталья Васильевна №3
+                                                </div>
+                                                <div class="lider-item__position">
+                                                    Эксперт по недвижимости
+                                                </div>
+                                                <div class="lider-item__text">
+                                                    Текст описание  работы Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна. Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна. Текст описание  работы Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии .элементы дизайна. Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии.элементы дизайна.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a class="landing__liders-slider-prev" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+                               <a class="landing__liders-slider-next" href="#"  data-uk-slidenav-next data-uk-slider-item="next"></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="landing__partners" id="partners">
+                <div class="uk-container">
+                    <h2 class="landing__partners-title section-title">Партнеры</h2>
+                    <div class="landing__partners-slider uk-visible-toggle" data-uk-slider>
+                        <div class="uk-position-relative">
+                            <div class="uk-slider-container">
+                                <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-grid">
+                                    <li>
+                                        <div class="landing__partners-item">
+                                            <img src="../img/partner-1.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="landing__partners-item">
+                                            <img src="../img/partner-2.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="landing__partners-item">
+                                            <img src="../img/partner-3.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="landing__partners-item">
+                                            <img src="../img/partner-4.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="landing__partners-item">
+                                            <img src="../img/partner-3.jpg" alt="">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="landing__partners-item">
+                                            <img src="../img/partner-4.jpg" alt="">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="uk-position-center-left-out" href="#" data-uk-slidenav-previous data-uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out" href="#" data-uk-slidenav-next data-uk-slider-item="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="landing__news" id="news">
+                <div class="uk-container">
+                    <h2 class="landing__news-title section-title">Новости</h2>
+                    <div class="landing__news-grid">
+                        <div>
+                            <div class="news-item">
+                                <div class="news-item__image uk-cover-container">
+                                    <a href="#">
+                                        <img class="uk-cover" src="../img/news.jpg" alt="" >
+                                    </a>
+                                </div>
+                                <div class="news-item__caption">
+                                    <div class="news-item__date">22.01.2018</div>
+                                    <div class="news-item__title">Название новости</div>
+                                    <div class="news-item__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии</div>
+                                    <a href="#" class="news-item__readmore">читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="news-item">
+                                <div class="news-item__image uk-cover-container">
+                                    <a href="#">
+                                        <img class="uk-cover" src="../img/news.jpg" alt="" >
+                                    </a>
+                                </div>
+                                <div class="news-item__caption">
+                                    <div class="news-item__date">22.01.2018</div>
+                                    <div class="news-item__title">Название новости</div>
+                                    <div class="news-item__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии</div>
+                                    <a href="#" class="news-item__readmore">читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="news-item">
+                                <div class="news-item__image uk-cover-container">
+                                    <a href="#">
+                                        <img class="uk-cover" src="../img/news.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="news-item__caption">
+                                    <div class="news-item__date">22.01.2018</div>
+                                    <div class="news-item__title">Название новости</div>
+                                    <div class="news-item__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии</div>
+                                    <a href="#" class="news-item__readmore">читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="news-item">
+                                <div class="news-item__image uk-cover-container">
+                                    <a href="#">
+                                        <img class="uk-cover" src="../img/news.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="news-item__caption">
+                                    <div class="news-item__date">22.01.2018</div>
+                                    <div class="news-item__title">Название новости</div>
+                                    <div class="news-item__text">Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии</div>
+                                    <a href="#" class="news-item__readmore">читать полностью</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="landing__news-more" type="button">Смотреть все</button>
+                </div>
+            </section>
+            <section class="landing__contacts" id="contacts">
+                <div class="uk-container">
+                    <h2 class="landing__contacts-title section-title">Контакты</h2>
+                    <div class="landing__contacts-columns">
+                        <div class="landing__contacts-map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af4a9680f1a7e8ecb5174dbeca71ba6e15aefc521eb84ec64ff0194dbceb7cdd5&amp;width=926&amp;height=458&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                        <div class="landing__contacts-info">
+                            <div class="landing__contacts-content">
+                                <div class="landing__contacts-row">
+                                    <span class="landing__contacts-icon icon icon_phone"></span>
+                                    <span class="landing__contacts-address">
+                                        г. Воронеж, ул. Южно-Моравская, д. 15 б
+                                    </span>
+                                </div>
+                                <div class="landing__contacts-row">
+                                    <span class="landing__contacts-icon icon icon_phone"></span>
+                                    <span class="landing__contacts-tel">
+                                        <span>(473)</span> 240-90-33
+                                    </span>
+                                </div>
+                                <div class="landing__contacts-row">
+                                    <span class="landing__contacts-icon icon icon_mail"></span>
+                                    <span class="landing__contacts-mail">
+                                        nov_adress@mail.ru
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__upper">
+                <div class="uk-container">
+                    <div class="footer__columns">
+                        <div class="footer__info">
+                            г. Воронеж, ул. Южно-Моравская, д. 15 б<br>
+                            <span>(473)</span> 240-90-33<br>
+                            nov_adress@mail.ru
+                        </div>
+                        <div class="footer__social">
+                            <div class="footer__mailing">
+                                <form class="footer__mailing-form">
+                                    <input class="footer__mailing-input" type="email" placeholder="Введите ваш e-mail" required>
+                                    <button class="footer__mailing-submit" type="submit">Подписаться <br>на рассылку</button>
+                                </form>
+                            </div>
+                            <div class="footer__share">
+                                <script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+                                <script src="//yastatic.net/share2/share.js"></script>
+                                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki" data-size="s"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__lower">
+                <div class="uk-container">
+                    <div class="footer__owner">
+                        2018 ©  Новый адрес<br>
+                        Агентство недвижимости
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="callback-modal" id="callback" data-uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" data-uk-close></button>
+                <div class="callback-modal__title">Обратная связь</div>
+                <form>
+                    <div class="callback-modal__row">
+                        <input class="uk-input" type="text" name="callback_name" placeholder="Имя:">
+                    </div>
+                    <div class="callback-modal__row">
+                        <input class="uk-input" type="email" name="callback_email" placeholder="E-mail:">
+                    </div>
+                    <div class="callback-modal__row">
+                        <input class="uk-input" type="tel" name="callback_tel" placeholder="Телефон*:" required>
+                    </div>
+                    <div class="callback-modal__row">
+                        <textarea class="uk-textarea" name="callback_message" placeholder="Сообщение:"></textarea>
+                    </div>
+                    <div class="callback-modal__tip">
+                        Поля, отмеченные *, обязательны для заполнения
+                    </div>
+                    <button class="callback-modal__submit" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+</html>

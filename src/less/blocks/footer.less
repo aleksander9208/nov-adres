@@ -1,0 +1,112 @@
+.footer {
+    background-color: #061148;
+}
+
+.footer__upper {
+    background-color: rgba(255,255,255,0.07);
+    @media (max-width: @breakpoint-medium) {
+        padding: 20px 0;
+    }
+}
+
+.footer__columns {
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: @breakpoint-medium) {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+}
+
+.footer__info {
+    font-size: 16px;
+    font-weight: 400;
+    span {
+        font-size: 12px;
+    }
+    @media (max-width: @breakpoint-medium) {
+        margin-bottom: 20px;
+    }
+}
+
+.footer__social {
+    @media (max-width: @breakpoint-small) {
+        width: 100%;
+    }
+}
+
+.footer__mailing-form {
+    display: flex;
+    margin-bottom: 16px;
+    @media (max-width: @breakpoint-medium) {
+        margin-bottom: 30px;
+    }
+    @media (max-width: @breakpoint-small) {
+        flex-direction: column;
+    }
+}
+
+.footer__mailing-input {
+    width: 361px;
+    box-sizing: border-box;
+    padding: 20px 0 20px 20px;
+    border: 0;
+    @media (max-width: @breakpoint-small) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.footer__mailing-submit {
+    width: 187px;
+    box-sizing: border-box;
+    padding: 11px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.26;
+    border: 0;
+    background-color: #138cbe;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    &:hover {
+        background-color: lighten(#138cbe, 10%);
+        transition: background-color 0.25s;
+    }
+}
+
+.footer__share {
+    .ya-share2__badge {
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #38416d !important;
+        &:hover {
+            background-color: lighten(#38416d, 10%) !important;
+        }
+    }
+    .ya-share2__icon {
+        width: 26px !important;
+        height: 26px !important;
+    }
+    .ya-share2__item_service_vkontakte .ya-share2__icon {
+        background: url('../../img/vk.svg') 50% 50% no-repeat !important;
+        background-size: 15px 7px !important;
+    }
+    .ya-share2__item_service_facebook .ya-share2__icon {
+        background: url('../../img/facebook.svg') 50% 50% no-repeat !important;
+        background-size: 5px 12px !important;
+    }
+    .ya-share2__item_service_odnoklassniki .ya-share2__icon {
+        background: url('../../img/classmates.svg') 50% 50% no-repeat !important;
+        background-size: 8px 13px !important;
+    }
+}
+
+.footer__owner {
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.35;
+}
